@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---------------------------------- INICIO DE HEAD (ENCABEZADO O LINK)--------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/calculadora.jpg" />
+    <title>Taller4 - Calculadora</title>
+</head>
+<!------------------------------------ FIN DE HEAD (ENCABEZADO O LINK)-----------------------------------------> 
+
+ <!------------------------------------------- INICIO CONTENIDO------------------------------------------------> 
+<body>
+
+    <header>
+        <h1>Calculadora - Taller 4</h1>
+    </header>
+
+
+    <section class="contenido">
+
+        <div class="datos">
+            <input type="number" id="n1" required style="margin-left: 10px;">
+            <input type="number" id="n2" required style="margin-right: 10px;">
+        </div>
+        <section class="operaciones">
+            <button onclick="operacion('suma')">+</button>
+            <button onclick="operacion('resta')">-</button>
+            <button onclick="operacion('multiplicaion')">*</button>
+            <button onclick="operacion('divicion')">/</button>
+        </section>
+        <div class="resp">
+            Resultado : <span id="resp"></span>
+        </div>
+    </section>
+<!------------------------------------------- FIN CONTENIDO------------------------------------------------>
+
+
+ <!------------------------------------------ INICIO FOOTER -------------------------------------------------->
+ <footer>
+
+</footer>
+<!--------------------------------------------- FIN FOOTER ---------------------------------------------------->
+
+
+<!------------------------------------- CONEXION CON EL DOCUEMNTO JS------------------------------------------->
+
+</body>
+<script src="../js/function.js"></script>
+
+</html>

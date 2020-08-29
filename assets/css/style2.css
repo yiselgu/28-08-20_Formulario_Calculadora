@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid #555555;
+    color: #555555;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    font-weight: bold;
+}
+
+
+.contInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.divInput{
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+}
+.contInput div>label{   /* Hijo directo*/
+    margin-bottom: 30px;
+}
+
+.contInput form{
+    width:40%;
+    margin:auto;
+    padding-bottom: 3rem;
+}
+
+.divInput input{
+    background-color: rgb(255, 250, 182);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contInput input:hover{ 
+    box-shadow: 0px 5px 5px black;
+
+}
+
+#btnEnviar{
+    margin-top:2rem;
+    align-self: center;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #4873df;
+    cursor: pointer;
+}
+
+.mensajeAlerta{
+    color: tomato;
+    margin-top:5px;
+}
+
+.inputCheckbox{
+    flex-direction: row;
+    justify-content: space-around;  /* justify eje actual */
+    align-items: center;
+    
+}
+.inputCheckbox>label{
+    order: 2;
+}
+
+.bgcAlert{
+    background-color: rgb(255, 173, 159) !important;
+}

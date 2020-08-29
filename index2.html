@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style2.css">
+    <title>formulario con JS</title>
+</head>
+
+<body>
+    <section class="contInput">
+        <form onsubmit="validarFormulario(event)" class="formContact">
+            <div class="divInput">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="" id="name">
+                <small id="mensajeAlertaNombre" class="mensajeAlerta"></small>
+            </div>
+            <div class="divInput">
+                <label for="">Apellido</label>
+                <input type="text" placeholder="" id="apellido">
+                <small id="mensajeAlertaApellido" class="mensajeAlerta"></small>
+            </div>
+            <div class="divInput">
+                <label for="">Correo</label>
+                <input type="email" placeholder="" id="correo">
+                <small id="mensajeAlertaCorreo" class="mensajeAlerta"></small>
+            </div>
+
+            <div class="divInput">
+                <label for="">Fecha Nacimiento</label>
+                <input type="date" id="FechaNacimiento">
+                <small id="mensajeAlertaFechaNacimiento" class="mensajeAlerta"></small>
+            </div>
+
+            <div class="divInput">
+                <label for="">Password</label>
+                <input type="password" id="Password">
+                <small id="mensajeAlertaPassword" class="mensajeAlerta"></small>
+            </div>
+            
+            <div class="divInput inputCheckbox">
+                <label for="chekboxTyC">Acepta terminos y condiciones</label>
+                <input type="checkbox" id="chekboxTyC">                
+        </div>
+            <small id="mensajeAlertTyC" class="mensajeAlerta"></small>
+            <br>
+            <input type="submit" value="Enviar" id="btnEnviar" >
+        </form>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/JS/scrpt2.js"></script>
+</body>
+
+
+</html>
